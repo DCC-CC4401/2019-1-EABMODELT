@@ -1,0 +1,49 @@
+.page-header{
+    background: #8400c6;
+}
+
+.title{
+    color: #ffffff;
+    text-align: center;
+}
+
+.rubric-table{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    border: solid #e0e0dc;
+    border-width: 1px;
+}
+
+.rubric-title{
+    font-weight: bold;
+}
+
+.rubric-aspect{
+    text-align: center;
+    border: solid #e0e0dc;
+    border-width: 1px;
+}
+
+.rubric-aspect-backg{
+    background-color: #efefef;
+}
+
+.rubric-selected-option{
+    background-color: #00d507;
+    color: #e0e0dc;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.indicator-text{
+    font-size: 1.3em;
+}
+
+.rubric-footer{
+    margin-top: 5%;
+    margin-left: 5%;
+}
