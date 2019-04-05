@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="static/css/main.css">
+  <link rel="stylesheet" type="text/css" href="static/css/landing_style.css"/>
 
 
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -41,32 +42,64 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 	</div>
 
 	<div class="row content">
-		<div class="flex-container">
-			<div class="bigbox">
-				<div class="boxheader">Evaluadores </div>
-			</div>
-		  	<div class="bigbox">
-		  		<div class="boxheader">Cursos</div>
-	  		</div>
-		  	<div class="bigbox">
-		  		<div class="boxheader">
-		  		Rúbricas</div>  
-			</div>
-<!-- 
+
+
+	 <div class="flex-container">
+		<!-- classes so the style can be applied to all 'rectangulo's -->
+		<!-- ids for the different colors -->
+		<div class="rectangulo" id="a">
+			<p class="rectitle">Evaluadores</p>
+			<img class="icon" src="static/icons/evaluator3.svg">
+			<!-- <a href="#crearevaluador">Crear Evaluador</a> -->
+
+			<button class="button">Crear Evaluador</button>
+			<button class="button">Modificar Evaluador</button>
+			<button class="button">Eliminar Evaluador</button>
 		</div>
-		<div class="flex-container"> -->
-		  	<div class="bigbox">
-		  		<div class="boxheader">Evaluaciones</div>
-		  	</div>
-		  	<div class="bigbox">
-		  		<div class="boxheader">Exportar Datos</div>
-		  	</div>
+
+		<div class="rectangulo" id="b">
+			<p class="rectitle">Nombres de cursos</p>
+			<img class="icon" src="static/icons/groupnames.svg">
 		</div>
+
+		<div class="rectangulo" id="c">
+			<p class="rectitle">Cursos</p>
+			<img class="icon" src="static/icons/group4.svg">
+			<div class="buttonsdiv">
+			<div class="mybuttonoverlap btn btn-info">Añadir Curso</div>
+			<div class="mybuttonoverlap">Modificar Curso</div>
+			<div class="mybuttonoverlap">Eliminar Curso</div>
+			</div class="buttonsdiv">
+		</div>
+
+		<div class="rectangulo" id="d">
+			<p class="rectitle">Evaluaciones</p>
+			<img class="icon" src="static/icons/evaluation3.svg">
+			<p class="button">Nueva Evaluación</p>
+			<p class="button">Evaluación Activas</p>
+			<p class="button"></p>
+		</div>
+
+		<div class="rectangulo" id="e">
+			<p class="rectitle">Rúbricas</p>
+			<img class="icon" src="static/icons/rubrica2.svg">
+		</div>
+
+		<div class="rectangulo" id="f">
+			<p class="rectitle">Crear evaluación</p>
+			<img class="icon" src="static/icons/createevaluation.svg">
+		</div>
+
+		<div class="rectangulo" id="g">
+			<p class="rectitle">Puntajes</p>
+			<img class="icon" src="static/icons/multiple-11.svg">
+		</div>
+	 </div>
 	</div>
 
-	<div class="row footer">
+<!-- 	<div class="row footer">
 	</div>
-
+ -->
 </div>
 </body>
 </html>

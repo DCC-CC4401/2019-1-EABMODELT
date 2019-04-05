@@ -34,7 +34,7 @@ p#header{
 
 
 .rectangulo{
-
+	position: relative;
 	flex-grow: 1;
   	flex-basis: 0;
   	flex-shrink: 1;
