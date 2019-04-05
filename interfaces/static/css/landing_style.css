@@ -16,22 +16,47 @@ p#header{
 	color:#9a9a9a;
 }
 
-header{
+.rect-container{
+
+	display: flex;
+  	flex-wrap: wrap-reverse;
+  	background-color: lightgrey;
+  	flex-direction: row;
+  	justify-content: space-around;
+
 	/*for center */
 	margin: auto;
 	margin-top:100px;
 	/* 1400 = 200 (every rectangle) * 7 (rectangles) */
-	width: 1400px;
-	height:400px;
-	background-color: red;
+	width: 80%;
+	/*height:400px;*/
 }
 
-div.rectangulo{
-	width: 200px;
+
+.rectangulo{
+
+	flex-grow: 1;
+  	flex-basis: 0;
+  	flex-shrink: 1;
+	width: 150px;
 	height: 400px;
 	float:left;
 	/* seconds that the transition will last */
 	-webkit-transition: height .4s;
+}
+
+
+.rectangulo .rectitle{
+	margin-top: 0px;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	padding-top:20px;
+	/* opacitiy values go from 0 to 1 */
+	opacity: .95;
+	-webkit-transition: padding-top .4s;
+
+
 }
 
 /*choose the color of every rectangulo */

@@ -78,6 +78,10 @@ body {
 
 
 .flex-container {
+  margin: auto;
+  margin-top:5%;
+
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   background-color: lightgrey;
