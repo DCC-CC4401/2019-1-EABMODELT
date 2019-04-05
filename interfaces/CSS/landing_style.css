@@ -1,0 +1,111 @@
+*{
+	/* remove browser margins*/ 
+	margin:0px;
+	padding:0px;
+	font-family: verdana;
+}
+
+div#tittle{
+	width:100%;
+	margin-top:80px;
+}
+
+p#header{
+	text-align: center;
+	font-size: 2.5em;
+	color:#9a9a9a;
+}
+
+header{
+	/*for center */
+	margin: auto;
+	margin-top:100px;
+	/* 1400 = 200 (every rectangle) * 7 (rectangles) */
+	width: 1400px;
+	height:400px;
+	background-color: red;
+}
+
+div.rectangulo{
+	width: 200px;
+	height: 400px;
+	float:left;
+	/* seconds that the transition will last */
+	-webkit-transition: height .4s;
+}
+
+/*choose the color of every rectangulo */
+
+div#a{
+	background-color: #2E8B57;
+}
+
+div#b{
+	background-color: #50C878;
+}
+
+div#c{
+	background-color: #98FB98;
+}
+
+div#d{
+	background-color: #b3cde0;
+}
+
+div#e{
+	background-color: #6497b1;
+}
+
+div#f{
+	background-color: #4b86b4;
+}
+
+div#g{
+	background-color: #005b96;
+}
+
+
+/* properties  for icons */
+img.icon{
+	display: block;
+	/* margin up 50 pixeles and then center */
+	margin:70px auto;
+	/* change the width if the size is not ok */
+	width: 100px;
+	/*background-color: white; */
+	padding: 5px;  
+	/* -webkit-border-radius: 0%; */
+	/* 30 px of expansion */
+	-webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	-webkit-transition:box-shadow .4s;
+
+}
+
+p.texto{
+	font-size: 1.2em;
+	color: white;
+	text-align: center;
+	padding-top:50px;
+	/* opacitiy values go from 0 to 1 */
+	opacity: .95;
+	-webkit-transition: padding-top .4s;
+}
+
+/*when 'touching' the rectangle (50 px more)*/
+div.rectangulo:hover{
+	height:450px; 
+}
+
+/*hover will only affect to the text (100px = 50px from hover + 50px from original padding-top*/
+div.rectangulo:hover p.texto{
+	padding-top: 100px;
+	opacity: 1;
+}
+
+/*hover will only affect to the img with the class icon */
+div.rectangulo:hover img.icon{
+	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+}
+
+
+
