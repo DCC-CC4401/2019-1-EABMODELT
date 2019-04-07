@@ -59,18 +59,29 @@ p#header{
 
 }
 
+.rectangulo .mybuttonoverlap{
+	color:white;
+	text-align: center;
+	height: 30px;
+	width: 100%;
+	border-style: solid;
+	margin: 1px;
+}
+
+
+.mustard{
+	background-color:#e4c64d;
+	border-color: #cbb044;
+}
+
 /*choose the color of every rectangulo */
 
 div#a{
 	background-color: #DAA520;
 }
 
-div#b{
-	background-color: #FEDC56;
-}
-
 div#c{
-	background-color: #FFF3A3;
+	background-color: #FEDC56;
 }
 
 div#d{
