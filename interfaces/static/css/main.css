@@ -5,17 +5,25 @@ body {
   margin: 0
 }
 
-.box {
+/**{*/
+  /* remove browser margins*/ 
+ /* margin:0px;
+  padding:0px;
+  font-family: verdana;
+}
+*/
+html,body,h1,h2,h3,h4,h5{font-family: "Raleway", sans-serif}
+
+.body-flex {
   display: flex;
   flex-flow: column;
   height: 100%;
 }
 
-.box .row {
-  border: 1px dotted grey;
+.body-flex .body-row {
 }
 
-.box .row.header {
+.body-flex .body-row.header {
   flex: 0 1 auto;
   /* The above is shorthand for:
   flex-grow: 0,
@@ -24,24 +32,35 @@ body {
   */
 }
 
-.box .row.content {
+.body-flex .body-row.content {
   flex: 1 1 auto;
 }
 
-.box .row.footer {
+.body-flex .body-row.footer {
   flex: 0 1 20px;
 }
 
 
+#fakenavbar{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	height: 50px
+}
+
 #navbar {
-  margin: 0;
+  z-index: 1000;
+  position: fixed;
+  overflow: hidden;
+  
   top:0;
   left: 0;
+  margin: 0;
   width: 100%;
-  /*height: 100%;*/
-  /*position: absolute;*/
+  height: 50px;
   background-color: #428bca;
-
 }
 
 
@@ -50,20 +69,22 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 50px;
+  height: 100%;
   width: 100%;
 }
 
+
 #navbar li {
   float: left;
-  height: 70px !important ;
+  bottom: 0px;
+  height: 50px !important ;
 }
 
 #navbar li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
 }
 
@@ -74,90 +95,3 @@ body {
 #navbar .active {
   background-color: #275379;
 }
-
-
-
-.flex-container {
-  margin: auto;
-  margin-top:5%;
-
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: lightgrey;
-  flex-direction: row;
-  justify-content: space-around;
-
-}
-
-
-.bigbox {
-  background-color: #f1f1f1;
-  /*width: 100px;*/
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-  flex-grow: 1;
-  flex-basis: 0;
-  flex-shrink: 1;
-  min-width: 200px;
-
-  min-height: 300px !important;
-  height: 50%;
-
-}
-
-.bigbox .boxheader{
-  background-color: #275379;
-  color: #FFFFFF;
-  max-height: 50px;
-  line-height: 50px;
-  overflow: hidden;
-  font-size: 2vw;
-}
-
-.rectangulo button{
-
-
-  height: 30px;
-  width: 100%;
-
-  font-size: 0.5em;
-
-  display: block;
-  text-align: center;
-/*  padding: 14px 16px;
-*/  text-decoration: none;
-
-}
-/*
-.mydivouter{
-  position:relative;
-  background: #f90;
-  width: 200px;
-  height: 120px;
-  margin: 0 auto;
-}*/
-
-
-/*.mydivoverlap{
-position: relative;
-z-index: 1;
-}*/
-
-.buttonsdiv{
-    /*position: absolute;*/
-    /*z-index: 2;*/
-    top: 44px;
-    display: none;
-    /*left: 59px; */
-}
-
-.rectangulo:hover .buttonsdiv{ 
-display:block;
-}
-</style>
-<div class="mydivouter">  
-<input type="button" class="mybuttonoverlap btn btn-info" value="Read More"/>
-</div>

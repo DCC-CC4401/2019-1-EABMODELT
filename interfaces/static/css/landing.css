@@ -1,0 +1,186 @@
+/**{*/
+	/* remove browser margins*/ 
+/*	margin:0px;
+	padding:0px;
+	font-family: verdana;
+*/}
+
+div#tittle{
+	width:100%;
+	margin-top:80px;
+}
+
+p#header{
+	text-align: center;
+	font-size: 2.5em;
+	color:#9a9a9a;
+}
+
+
+div#a{
+	background-color: #DAA520;
+}
+
+div#c{
+	background-color: #FEDC56;
+}
+
+div#d{
+	background-color: #b3cde0;
+}
+
+div#e{
+	background-color: #6497b1;
+}
+
+div#f{
+	background-color: #4b86b4;
+}
+
+div#g{
+	background-color: #005b96;
+}
+
+
+
+/* properties  for icons */
+img.icon{
+	display: block;
+	/* margin up 50 pixeles and then center */
+	margin:30px auto;
+	/* change the width if the size is not ok */
+	height: 60px !important;
+	/*background-color: white; */
+	padding: 5px;  
+	/* -webkit-border-radius: 0%; */
+	/* 30 px of expansion */
+	-webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
+	-webkit-transition:box-shadow .4s;
+
+}
+
+p.texto{
+	font-size: 1.2em;
+	color: white;
+	text-align: center;
+	padding-top:50px;
+	/* opacitiy values go from 0 to 1 */
+	opacity: .95;
+	-webkit-transition: padding-top .4s;
+}
+
+
+.menu-container {
+  margin: auto;
+  margin-top:5%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightgrey;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.menu-box{
+	position: relative;
+	flex-grow: 1;
+  	flex-basis: 0;
+  	flex-shrink: 1;
+	width: 150px;
+	height: 300px;
+	float:left;
+	/* seconds that the transition will last */
+	-webkit-transition: height .4s;
+
+}
+
+.menu-box .menu-title{
+	margin-top: 0px;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	padding-top:20px;
+	/* opacitiy values go from 0 to 1 */
+	opacity: .95;
+	-webkit-transition: padding-top .4s;
+}
+
+
+/*when 'touching' the rectangle (50 px more)*/
+.menu-box:hover{
+	height:400px; 
+}
+
+/*hover will only affect to the text (100px = 50px from hover + 50px from original padding-top*/
+.menu-box:hover p.texto{
+	padding-top: 100px;
+	opacity: 1;
+}
+
+/*hover will only affect to the img with the class icon */
+.menu-box:hover img.icon{
+	-webkit-box-shadow:0px 0px 0px 0px rgba(255,255,255,.6);
+}
+
+/* buttons appear when cursor is */
+
+/*.menu-box button{
+  height: 30px;
+  width: 100%;
+
+  font-size: 0.5em;
+
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+*/
+
+.menu-box .menu-button{
+	color:white;
+	text-align: center;
+	height: 30px;
+	/*width: 100%;*/
+	border-style: solid;
+	margin: 1px;
+	background-color: #428bca;
+}
+
+.menu-box .menu-button  a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+/*.menu-box .menu-button  a:hover:not(.active) {
+  background-color: #275379;
+}
+*/
+
+.mustard{
+	background-color:#e4c64d !important;
+	border-color: #cbb044;
+}
+
+
+.mustard:hover{
+	background-color:#cbb044 !important;
+	border-color: #cbb044;
+}
+
+
+.menu-button-cont{
+    position: relative;
+    width: 80%;
+    bottom: -100px;
+    margin: 0 10%;
+    margin-top: 20px;
+    display: none;
+}
+
+.menu-box:hover .menu-button-cont{ 
+	display:block;
+}
