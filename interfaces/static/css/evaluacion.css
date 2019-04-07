@@ -1,0 +1,63 @@
+.boxed {
+	padding: 10px;
+	margin-left: 5%;
+	border: 3px solid #428bca;
+	width: 70%
+
+}
+
+#rubricaev {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin-left: 5%;
+  width: 70%;
+}
+
+#rubricaev td, #rubricaev th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+/*
+#rubricaev tr:nth-child(even){background-color: #FFFFFF;}
+*/
+#rubricaev tr:hover {background-color: #ddd;}
+
+#rubricaev th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #428bca;
+  color: white;
+}
+
+#rubricaev tr:last-child {
+   background: #c6dcef;
+}
+
+#tabletitle {
+  display: table-caption;
+  text-align: center;
+}
+.markcol {
+	background-color: #67a2d4;
+}
+/* column y row: distribucion en columnas de feedback eq docente */
+.column {
+	
+  float: left;
+  width: 30%;
+  background-color: lightblue;
+  border: 2px black;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+.title2 {
+		color: #ffffff;
+    text-align: center;
+}
