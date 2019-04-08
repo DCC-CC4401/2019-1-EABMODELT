@@ -17,19 +17,19 @@ p#header{
 }
 
 
-div#a{
+div#evaluaciones{
 	background-color: #DAA520;
 }
 
-div#c{
+div#rubricas{
 	background-color: #FEDC56;
 }
 
-div#d{
+div#notas{
 	background-color: #b3cde0;
 }
 
-div#e{
+div#evaluadores{
 	background-color: #6497b1;
 }
 
@@ -37,7 +37,7 @@ div#f{
 	background-color: #4b86b4;
 }
 
-div#g{
+div#cursos{
 	background-color: #005b96;
 }
 
@@ -79,7 +79,6 @@ p.texto{
   background-color: lightgrey;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 .menu-box{
@@ -144,7 +143,7 @@ p.texto{
 	/*width: 100%;*/
 	border-style: solid;
 	margin: 1px;
-	background-color: #428bca;
+	/* background-color: #428bca; */
 }
 
 .menu-box .menu-button  a {
@@ -161,14 +160,54 @@ p.texto{
 */
 
 .mustard{
-	background-color:#e4c64d !important;
+	background-color:#e4c64d ;
 	border-color: #cbb044;
 }
 
 
 .mustard:hover{
-	background-color:#cbb044 !important;
+	background-color:#cbb044 ;
 	border-color: #cbb044;
+}
+
+.yellow{
+	background-color:#e4c64d ;
+	border-color: #cdb245;
+}
+
+.yellow:hover{
+	background-color:#cdb245 ;
+	border-color: #cdb245;
+}
+
+.lightblue{
+	background-color:#8fa4b3 ;
+	border-color: #6b7b86;
+}
+
+.lightblue:hover{
+	background-color:#6b7b86 ;
+	border-color: #6b7b86;
+}
+
+.blue{
+	background-color:#50788d ;
+	border-color: #3c5a6a;
+}
+
+.blue:hover{
+	background-color:#3c5a6a ;
+	border-color: #3c5a6a;
+}
+
+.darkblue{
+	background-color:#004878 ;
+	border-color: #002d4b;
+}
+
+.darkblue:hover{
+	background-color:#002d4b ;
+	border-color: #002d4b;
 }
 
 
