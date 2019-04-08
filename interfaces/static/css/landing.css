@@ -109,6 +109,7 @@ p.texto{
 /*when 'touching' the rectangle (50 px more)*/
 .menu-box:hover{
 	height:370px; 
+	width: 900px !important;
 }
 
 /*hover will only affect to the text (100px = 50px from hover + 50px from original padding-top*/
@@ -139,7 +140,7 @@ p.texto{
 .menu-box .menu-button{
 	color:white;
 	text-align: center;
-	height: 30px;
+	/*height: 30px;*/
 	/*width: 100%;*/
 	border-style: solid;
 	margin: 1px;
