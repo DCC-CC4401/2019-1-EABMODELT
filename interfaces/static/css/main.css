@@ -2,7 +2,8 @@
 html,
 body {
   height: 100%;
-  margin: 0
+  margin: 0;
+  background-color: lightgrey !important;
 }
 
 /**{*/
@@ -41,7 +42,7 @@ html,body,h1,h2,h3,h4,h5{font-family: "Raleway", sans-serif}
 }
 
 
-#fakenavbar{
+#fakecustom{
 	position: relative;
 	top: 0;
 	left: 0;
@@ -50,9 +51,9 @@ html,body,h1,h2,h3,h4,h5{font-family: "Raleway", sans-serif}
 	height: 50px
 }
 
-#navbar {
+.custom-navbar {
   z-index: 1000;
-  position: fixed;
+  /*position: fixed;*/
   overflow: hidden;
   
   top:0;
@@ -63,8 +64,8 @@ html,body,h1,h2,h3,h4,h5{font-family: "Raleway", sans-serif}
   background-color: #428bca;
 }
 
-
-#navbar ul {
+/*
+.custom-navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -72,15 +73,15 @@ html,body,h1,h2,h3,h4,h5{font-family: "Raleway", sans-serif}
   height: 100%;
   width: 100%;
 }
-
-
-#navbar li {
+*/
+/*
+.custom-navbar li {
+}
+*/
+.custom-navbar a, span {
   float: left;
   bottom: 0px;
-  height: 50px !important ;
-}
-
-#navbar li a {
+  /*height: 50px !important ;*/
   display: block;
   color: white;
   text-align: center;
@@ -88,10 +89,55 @@ html,body,h1,h2,h3,h4,h5{font-family: "Raleway", sans-serif}
   text-decoration: none;
 }
 
-#navbar li a:hover:not(.active) {
+
+
+.custom-dropmenu {
+  float: right;
+  overflow: hidden;
+}
+
+
+.custom-dropmenu .custom-dropbtn{
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 16px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.custom-navbar a:hover, .custom-dropmenu:hover .custom-dropbtn {
   background-color: #275379;
 }
 
-#navbar .active {
-  background-color: #275379;
+
+.custom-dropmenu-content {
+  position: relative;
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.custom-dropmenu-content a {
+  height: 30px;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.custom-dropmenu-content a:hover {
+  background-color: #ddd;
+}
+
+.custom-dropmenu:hover .custom-dropmenu-content {
+  display: block;
 }

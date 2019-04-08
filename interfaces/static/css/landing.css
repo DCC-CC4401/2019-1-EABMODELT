@@ -49,7 +49,7 @@ img.icon{
 	/* margin up 50 pixeles and then center */
 	margin:30px auto;
 	/* change the width if the size is not ok */
-	height: 60px !important;
+	height: 30% !important;
 	/*background-color: white; */
 	padding: 5px;  
 	/* -webkit-border-radius: 0%; */
@@ -109,7 +109,7 @@ p.texto{
 
 /*when 'touching' the rectangle (50 px more)*/
 .menu-box:hover{
-	height:400px; 
+	height:370px; 
 }
 
 /*hover will only affect to the text (100px = 50px from hover + 50px from original padding-top*/
@@ -175,7 +175,7 @@ p.texto{
 .menu-button-cont{
     position: relative;
     width: 80%;
-    bottom: -100px;
+    bottom: 0px;
     margin: 0 10%;
     margin-top: 20px;
     display: none;

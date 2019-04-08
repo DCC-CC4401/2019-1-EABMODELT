@@ -9,23 +9,33 @@
 <link rel="stylesheet" href="static/css/main.css">
 <link rel="stylesheet" type="text/css" href="static/css/landing.css"/>
 
-
-<body style="background-color: lightgrey">
+<!-- awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
 
 <div class="body-flex">
-	<div class='body-row header'>
-		<div id="fakenavbar"> </div>
-		<div id="navbar" >
-			<ul>
-		  		<li><a href="#home">Logo</a></li>
-		  		<li style="flex-grow: 1; margin: auto"><a href="#home"> Sistema de Evaluación CC4401</a></li>
-		  		<li style="float:right"><a class="active" href="#about">Exit</a></li>
-			</ul>
-		</div>
-	</div>
+        <div class='body-row header'>
+            <div class="custom-navbar" >
+                    <a href="#home">Logo</a>
+                    <a style="flex-grow: 1; margin: auto" href="#home"> Sistema de Evaluación CC4401</a>
+                    <div class="custom-dropmenu">
+                        <div class="custom-dropbtn">Admin: Jocelyn Simmonds<i style="margin-left: 5px;" class="fa fa-caret-down"></i></div>
+
+                        <div class="custom-dropmenu-content">
+                            <a href="#"> Perfil</a>
+                            <a href="#"> Configuración</a>
+                        </div>
+                    </div>  
+            </div>
+        </div>
+
+
 
 
 	<div class="body-row content">
+
+
+		<h2 style="margin-left:5%; margin-top: 50px">Bienvenida, Profesora Jocelyn.</h2>
 		<div class="menu-container">
 			
 			<div class="menu-box" id="a">
@@ -34,29 +44,28 @@
 				<div class="menu-button-cont">
 					<div class="menu-button mustard"><a>Nueva Evaluación</a></div>
 					<div class="menu-button mustard"><a>Evaluación Activas</a></div>
-					<div class="menu-button mustard"><a>Evaluaciones</a></div>
+					<div class="menu-button mustard"><a>Todas las Evaluaciones</a></div>
 				</div>
 			</div>
 
 			<div class="menu-box" id="c">
-				<img class="icon" src="static/icons/rubrica2.svg">
+				<a href="rubricaMenuAdmin.html"> <img class="icon"  src="static/icons/rubrica2.svg"> </a>
 				<p class="menu-title">Rúbricas</p>
 				<div class="menu-button-cont">
-					<div class="menu-button"><a>Añadir Curso</a></div>
-					<div class="menu-button"><a>Modificar Curso</a></div>
-					<div class="menu-button"><a>Eliminar Curso</a></div>
+					<div class="menu-button"><a href="rubricaFichaAdmin.html">Crear Rúbrica</a></div>
+					<div class="menu-button"><a href="rubricaMenuAdmin.html">Ver Todas</a></div>
 				</div>
 			</div>
 
 
 			<div class="menu-box" id="d">
 				<img class="icon" src="static/icons/multiple-11.svg">
-				<p class="menu-title">Puntajes</p>
+				<p class="menu-title">Notas</p>
 				<div class="menu-button-cont">
-					<div class="menu-button"><a>Añadir Curso</a></div>
-					<div class="menu-button"><a>Modificar Curso</a></div>
-					<div class="menu-button"><a>Eliminar Curso</a></div>
-				</div>
+					<div class="menu-button"><a>Exportar Notas (Excel)</a></div>
+					<div class="menu-button"><a href="resumen_evaluacion_alumno.html">Generar Resumen</a></div>
+<!-- 					<div class="menu-button"><a>Eliminar Curso</a></div>
+ -->				</div>
 
 			</div>
 
@@ -65,8 +74,7 @@
 				<p class="menu-title">Evaluadores</p>
 				<div class="menu-button-cont">
 					<div class="menu-button"><a href="rubricaFichaAdmin.html">Crear Evaluador </a> </div>
-					<div class="menu-button"><a href="rubricaFichaAdmin.html">Modificar Evaluador </a> </div>
-					<div class="menu-button"><a href="rubricaFichaAdmin.html">Eliminar Evaluador </a> </div>
+					<div class="menu-button"><a href="rubricaFichaAdmin.html">Administrar Evaluadores </a> </div>
 				</div>
 			</div>
 
@@ -75,8 +83,9 @@
 				<p class="menu-title">Cursos</p>
 				<div class="menu-button-cont">
 					<div class="menu-button"><a>Añadir Curso</a></div>
-					<div class="menu-button"><a>Modificar Curso</a></div>
-					<div class="menu-button"><a>Eliminar Curso</a></div>
+					<div class="menu-button"><a>Administrar Nombres Curso</a></div>
+					<div class="menu-button"><a>Administrar Cursos</a></div>
+					<div class="menu-button"><a>Administrar Grupos</a></div>
 				</div>
 			</div>
 
