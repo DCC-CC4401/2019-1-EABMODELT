@@ -13,17 +13,22 @@
 
 
 
-<body style="background-color: white">
+<body>
     <div class="body-flex">
         <div class='body-row header'>
-            <div id="fakenavbar"> </div>
-            <div id="navbar" >
-                <ul>
-                    <li><a href="#home">Logo</a></li>
-                    <li style="flex-grow: 1; margin: auto"><a href="#home"> Sistema de Evaluación CC4401</a></li>
-                    <li> <a>  Resumen de Evaluación </a></li>
-                    <li style="float:right"><a class="active" href="#about">Exit</a></li>
-                </ul>
+            <div class="custom-navbar" >
+                    <a href="landingAdmin.html">Logo</a>
+                    <a style="flex-grow: 1; margin: auto; margin-right: 0" href="landingAdmin.html"> Sistema de Evaluación CC4401</a>
+                    <!-- <div class="custom-dropmenu">
+                        
+                        <div class="custom-dropbtn">Admin: Jocelyn Simmonds 
+                        </div><span style="margin-left: 5px; float:right;" class="fa fa-caret-down"></span>
+
+                        <div class="custom-dropmenu-content">
+                            <a href="#"> Perfil</a>
+                            <a href="#"> Configuración</a>
+                        </div>
+                    </div> -->  
             </div>
         </div>
 
@@ -36,12 +41,18 @@
             <h2 class="title2"> Ingeniería de Software                    CC4401-1                     2019</h3>
        </div> -->
 	
-	<div class="boxed">
-	N° evaluación (Tarea): X <br>
-	Grupo: X <br>
-	Presentadores: Juanita y Juanito <br>
-	Fecha de presentación: <br> 
-	Duración presentación:
+	<div class="boxed">  
+	   <b> Evaluación:</b> Tarea 2 Interfaces <br>
+       <b> Curso:</b> CC4401-1 2019-1<br>
+       <b> Evaluadores:</b> Profesora Jocelyn Simmonds, Pablo Miranda y Daniela Chacón.<br> 
+       <b> Fecha:</b> 09/04/2019  16:15:00 CLT<br> 
+	   <b> Duración:</b> 5:00
+       
+       
+       <br><hr>
+       <b>Grupo:</b> EABMODELT (12) <br>
+       <b>Integrantes:</b> ... <br>
+       <b>Presentadores:</b> Juanita y Juanito <br>
 	</div>
 	<br>
 	<br>
@@ -49,11 +60,11 @@
 	<div style="overflow-x:auto">
 		
     <table id="rubricaev" border="0" cellspacing="1" cellpadding="0">
-		<caption id="tabletitle"> Rúbrica de evaluación </caption>
-		  <colgroup>
-    <col class="normalcol" span="4" />
-    <col class="markcol"/>
-  </colgroup>
+		<!-- <caption id="tabletitle"> Rúbrica de evaluación </caption> -->
+		<colgroup>
+            <col class="normalcol" span="4" />
+            <col class="markcol"/>
+        </colgroup>
     	<thead>
     		<tr>
     			<th>Aspecto a evaluar</th>
@@ -66,81 +77,90 @@
     	</thead>
     	<tbody>
     		<tr>
-    			<td>Aspecto 1: blablablablabaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaalabla blablablablab lablabla </td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
+    			<td>Aspecto 1: Contenido </td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
     			<td class="numeric">0.8</td>
     		</tr>
 			
     		<tr>
-    			<td>Aspecto 2: blablablablablablablablablablablablabla </td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
+    			<td>Aspecto 2: Calidad del material</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
     			<td class="numeric">0.4</td>
     		</tr>
 
     		<tr>
-    			<td>Aspecto 3: blablablablablablablablablablablablabla</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.3</td>
+    			<td>Aspecto 3: Relación con requisitos funcionales</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">0.6</td>
     		</tr>
     		<tr>
-    			<td>Aspecto 4: blablablablablablablablablablablablabla</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
+    			<td>Aspecto 4: Organización de la información</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
     			<td class="numeric">0.9</td>
     		</tr>
     		<tr>
-    			<td>Aspecto 5: blablablablablablablablablablablablabla</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.5</td>
-    			<td class="numeric">0.1</td>
+    			<td>Aspecto 5: Forma</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">1.0</td>
+    			<td class="numeric">0.7</td>
     		</tr>
+            <tr>
+                <td>Aspecto 6: Entusiamo</td>
+                <td class="numeric">1.0</td>
+                <td class="numeric">1.0</td>
+                <td class="numeric">1.0</td>
+                <td class="numeric">1.0</td>
+                <td class="numeric">1.0</td>
+            </tr>
     		<tr>
     			<td>Nota</td>
-    			<td class="numeric">5.8</td>
-    			<td class="numeric">5.8</td>
-    			<td class="numeric">5.8</td>
-    			<td class="numeric">5.8</td>
-    			<td class="numeric">7</td>
+    			<td class="numeric">7.0</td>
+    			<td class="numeric">7.0</td>
+    			<td class="numeric">7.0</td>
+    			<td class="numeric">7.0</td>
+    			<td class="numeric">5.4</td>
     		</tr>
     	</tbody>
     </table>
 	</div>
-	
-	<h2> Feedback del equipo docente </h2>
 
- <div class="row">
-  <div class="column">
-	  <h2> Evaluador 1</h2>
-  	<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla dui vitae orci suscipit, non auctor ex efficitur. Suspendisse et lectus volutpat, auctor odio in, volutpat risus. Proin elit nibh, blandit eget varius id, vulputate quis tortor. 	
-	</p>
-  </div>
- 
-   <div class="column">
-	   <h2> Evaluador 2</h2>
-  	<p> 
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla dui vitae orci suscipit, non auctor ex efficitur. Suspendisse et lectus volutpat, auctor odio in, volutpat risus. Proin elit nibh, blandit eget varius id, vulputate quis tortor. 	
-	</p>
-  </div>
-  <div class="column">
-	  <h2> Evaluador 3</h2>
-  	<p> 
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla dui vitae orci suscipit, non auctor ex efficitur. Suspendisse et lectus volutpat, auctor odio in, volutpat risus. Proin elit nibh, blandit eget varius id, vulputate quis tortor. 	
-	</p>
-  </div>
+
+    <div id="feedback" style="margin-bottom: 30px">	
+        <h2> Feedback del equipo docente </h2>
+        <div class="row">
+            <div class="column">
+        	   <h2> Evaluador 1</h2>
+              	<p>
+            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla dui vitae orci suscipit, non auctor ex efficitur. Suspendisse et lectus volutpat, auctor odio in, volutpat risus. Proin elit nibh, blandit eget varius id, vulputate quis tortor. 	
+            	</p>
+          </div>
+           <div class="column">
+        	   <h2> Evaluador 2</h2>
+              	<p> 
+            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla dui vitae orci suscipit, non auctor ex efficitur. Suspendisse et lectus volutpat, auctor odio in, volutpat risus. Proin elit nibh, blandit eget varius id, vulputate quis tortor. 	
+            	</p>
+          </div>
+          <div class="column">
+        	   <h2> Evaluador 3</h2>
+              	<p> 
+            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla dui vitae orci suscipit, non auctor ex efficitur. Suspendisse et lectus volutpat, auctor odio in, volutpat risus. Proin elit nibh, blandit eget varius id, vulputate quis tortor. 	
+            	</p>
+          </div>
+</div>
 </div> 
 </div>
 </div>

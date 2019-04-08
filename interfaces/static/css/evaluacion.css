@@ -2,8 +2,8 @@
 	padding: 10px;
 	margin-left: 5%;
 	border: 3px solid #428bca;
-	width: 70%
-
+	width: 70%;
+  background-color: white;
 }
 
 #rubricaev {
@@ -11,6 +11,7 @@
   border-collapse: collapse;
   margin-left: 5%;
   width: 70%;
+  background-color: white;
 }
 
 #rubricaev td, #rubricaev th {
@@ -60,4 +61,11 @@
 .title2 {
 		color: #ffffff;
     text-align: center;
+}
+
+
+#feedback{
+  margin-top: 40px;
+  margin-left: 5%;
+  width:90%;
 }
