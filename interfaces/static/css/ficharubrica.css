@@ -71,6 +71,8 @@ table.rubric-table{
     width: 80%;
     display: inline-block !important;
     border: 1px solid lightgray;
+    background-color:#428bca;
+    font-size: 12pt;
 
 }
 
@@ -113,6 +115,8 @@ table.rubric-table{
 
 .editable{
 
-/*    background-color: white;
-*/    border: 1px dotted black;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px dotted black;
 }
