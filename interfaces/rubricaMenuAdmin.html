@@ -11,6 +11,9 @@
         <!--Carga de ficheros CSS creados por el grupo-->
         <link rel="stylesheet" type="text/css" href="static/css/ficharubrica.css">
         <link rel="stylesheet" type="text/css" href="static/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
         <title>Administrador de Rúbricas</title>
     </head>
@@ -18,16 +21,24 @@
     <body>
     <div class="body-flex">
         <div class='body-row header'>
-            <div id="fakenavbar"> </div>
-            <div id="navbar" >
-                <ul>
-                    <li><a href="#home">Logo</a></li>
-                    <li style="flex-grow: 1; margin: auto"><a href="#home"> Sistema de Evaluación CC4401</a></li>
-                    <li> <a> Rúbrica Menú </a></li>
-                    <li style="float:right"><a class="active" href="#about">Exit</a></li>
-                </ul>
+            <div class="custom-navbar" >
+                    <a href="landingAdmin.html">Logo</a>
+                    <a style="flex-grow: 1; margin: auto; margin-right: 0" href="landingAdmin.html"> Sistema de Evaluación CC4401</a>
+                    <span style="margin:0px; ">>></span>
+                    <a style="margin-right: :0px" href="">Menú de Rúbricas </a>
+                    <div class="custom-dropmenu">
+                        
+                        <div class="custom-dropbtn">Admin: Jocelyn Simmonds 
+                        <i style="margin-left: 5px; float:right;" class="fa fa-caret-down"></i></div>
+
+                        <div class="custom-dropmenu-content">
+                            <a href="#"> Perfil</a>
+                            <a href="#"> Configuración</a>
+                        </div>
+                    </div>  
             </div>
         </div>
+
 
         <div class="body-row content">
 
@@ -36,29 +47,36 @@
             </div>
 
             <!--Como un link a la rúbrica-->
-            <ul>
+            <!-- <ul>
                 <nav class="navbar navbar-light bg-light rubric-list">
                     <a class="navbar-brand" href="#">Rúbrica 1 - 2019/1</a>
                     <button style="float:right" type="button" class="btn btn-info">Detalles</button>
                     <button style="float:right" type="button" class="btn btn-danger">Eliminar</button>
                 </nav>
-            </ul>
+            </ul> -->
 
-            
             <nav class="navbar navbar-light bg-light rubric-list">
-                <a class="navbar-brand" href="#">Rúbrica 1 - 2019/1</a>
-                <button type="button" class="btn btn-info">Detalles</button>
-                <button type="button" class="btn btn-danger">Eliminar</button>
+                <button type="button" class="btn btn-success">Crear Nueva Rúbrica</button>
+                <input class="details-but" type="search" placeholder="Buscar Rúbrica" id="Buscador" />
+            </nav>
+            <br>
+            <nav class="navbar navbar-light bg-light rubric-list" style="display: inline-block !important;">
+                <a class="navbar-brand" href="#">Rúbrica 3 - 2019/1</a>
+                <button type="button" class="btn btn-danger details-but">Eliminar</button>
+                <button type="button" class="btn btn-success details-but" onclick="location.href='rubricaFichaAdmin.html'">Editar</button>
+                <button type="button" class="btn btn-info details-but" onclick="location.href='rubricaFichaEval.html'">Detalles</button>
             </nav>
             <nav class="navbar navbar-light bg-light rubric-list">
                 <a class="navbar-brand" href="#">Rúbrica 2 - 2019/1</a>
-                <button type="button" class="btn btn-info">Detalles</button>
-                <button type="button" class="btn btn-danger">Eliminar</button>
+                <button type="button" class="btn btn-danger details-but">Eliminar</button>
+                <button type="button" class="btn btn-success details-but" onclick="location.href='rubricaFichaAdmin.html'">Editar</button>
+                <button type="button" class="btn btn-info details-but">Detalles</button>
             </nav>
             <nav class="navbar navbar-light bg-light rubric-list">
-                <a class="navbar-brand" href="#">Rúbrica 3 - 2019/1</a>
-                <button type="button" class="btn btn-info">Detalles</button>
-                <button type="button" class="btn btn-danger">Eliminar</button>
+                <a class="navbar-brand" href="#">Rúbrica 1 - 2019/1</a>
+                <button type="button" class="btn btn-danger details-but">Eliminar</button>
+                <button type="button" class="btn btn-success details-but" onclick="location.href='rubricaFichaAdmin.html'">Editar</button>
+                <button type="button" class="btn btn-info details-but">Detalles</button>
             </nav>
         
         </div>

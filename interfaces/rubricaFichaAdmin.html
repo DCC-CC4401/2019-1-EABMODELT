@@ -17,16 +17,21 @@
     <body style="background-color: white">
     <div class="body-flex">
         <div class='body-row header'>
-            <div id="fakenavbar"> </div>
-            <div id="navbar" >
-                <ul>
-                    <li><a href="#home">Logo</a></li>
-                    <li style="flex-grow: 1; margin: auto"><a href="#home"> Sistema de Evaluación CC4401</a></li>
-                    <li> <a> Rúbrica Admin - Editar </a></li>
-                    <li style="float:right"><a class="active" href="#about">Exit</a></li>
-                </ul>
+            <div class="custom-navbar" >
+                    <a href="landingAdmin.html">Logo</a>
+                    <a style="flex-grow: 1; margin: auto; margin-right: 0" href="landingAdmin.html"> Sistema de Evaluación CC4401</a>
+                    <div class="custom-dropmenu">
+                        
+                        <div class="custom-dropbtn">Admin: Jocelyn Simmonds 
+                        </div><span style="margin-left: 5px; float:right;" class="fa fa-caret-down"></span>
+
+                        <div class="custom-dropmenu-content">
+                            <a href="#"> Perfil</a>
+                            <a href="#"> Configuración</a>
+                        </div>
+                    </div>  
             </div>
-        </div>
+        </div>        
 
         <div class="body-row content">
 
@@ -36,173 +41,207 @@
             <div class="rubric-footer">
                 <p><b>Descripción Rúbrica:</b> Esta rúbrica concentra la evaluación de la presentación en los puntos...</p>
             </div>
-            <table border="0" cellspacing="1" cellpadding="0" style="margin-left:5%">
+
+
+
+
+            <table class="rubric-table"">
                 <tbody>
+
                     <tr>
+                        <td> </td>
+                        <td class="align-center"> <button type="button" class="btn btn-info"> Guardar </button>
+</td>
                         <!-- Aquí podría ir el nombre de la rúbrica si queremos mostrarlo -->
                     </tr>
                     <tr>
-                        <td width="20%"></td>
+                        <td></td>
+
+                        <td></td>
                         <td class="rubric-aspect rubric-aspect-backg">
                             <b>Incompleto</b><br>
                             <b>0pts</b>
                         </td>						
                         <td class="rubric-aspect rubric-aspect-backg">
                             <b>Deficiente</b><br>
-                            <b>0.25pts</b>
+                            <b>0.3pts</b>
                         </td>						
                         <td class="rubric-aspect rubric-aspect-backg">
                             <b>Regular</b><br>
-                            <b>0.5pts</b>
+                            <b>0.7pts</b>
                         </td>
                         <td class="rubric-aspect rubric-aspect-backg">
                             <b>Bueno</b><br>
-                            <b>0.75pts</b>
-                        </td>
-                        <!--
-                        <td class="rubric-aspect rubric-aspect-backg">
-                            <b>Excelente</b><br>
                             <b>1.0pts</b>
                         </td>
-                        -->
+                         <td class="align-center"><span style="display: inline !important;">
+                            <button type="button" class="btn btn-success add-button">+</button></span>
+                        </td>
+
                     </tr>
                     <tr>
+
+                        <td class="align-center">
+                            <button type="button" class="btn btn-danger delete-button">x</button>
+
+                        </td>
+
                         <td class="rubric-aspect rubric-aspect-backg">
-                            <div style="height:20px;"></div>
                             <b>Contenido</b>
-                            <div style="height:20px;"></div>		
                         </td>
-                        <td class="rubric-aspect"> 	
-                            The table does not contain any rows or columns or the assignment was never started.
-                        </td>  
-                        <td class="rubric-aspect"> 
-                            The table has rows and columns but less than 5 rows and 3 columns.
-                        </td>  
-                        <td class="rubric-aspect"> 
-                            The table has 5 rows and 3 columns.	
-                        </td>  
-                        <td class="rubric-aspect"> 
-                            The table has 5 rows and 3 columns.	
-                        </td>
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 	
+                            No incluye las interfaces solicitadas 
+                        </div></td>
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            Faltan la mayoria de las interfaces
+                        </div></td> 
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            Solo faltan 1 o 2 interfaces
+                        </div></td>  
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            Incluye todas las interfaces solicitadas
+                        </div></td>
+                        <!-- 
                         <td class="align-center">
-                            <div style="height:3px"></div>
                             <button type="button" class="btn btn-success add-button">+</button>
-                            <div style="height:3px"></div>
+                        </td> -->
+                    
+
+                    </tr>
+
+                    <tr>
+
+                        <td class="align-center">
+                            <button type="button" class="btn btn-danger delete-button">x</button>
+                        </td>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Calidad del material</b>
+                        </td>
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            Presentación con muchos errores ortográficos, todas las imágenes son de baja resolución 
+                        </div></td>  
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            Algunos errores ortográficos, casi todas las imágenes son de baja resolución
+                        </div></td> 
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            Pocos errores ortográficos, solo algunas imágenes son de baja resolución
+                        </div></td>
+                        
+                        <td class="align-center">
+                            <button type="button" class="btn btn-success add-button">+</button>
                         </td>
                     </tr>
+
                     <tr>
-                        <td class="rubric-aspect rubric-aspect-backg">
-                            <div style="height:20px;"></div>
-                            <b>Calidad del Material</b>
-                            <div style="height:20px;"></div>
-                        </td>
-                        <td class="rubric-aspect"> 
-                            The table does not exist or the assignment was never started.
-                        </td>  
-                        <td class="rubric-aspect"> 
-                            The table width was not specified or the width was set to less than 600px.
-                        </td>  
-                        <td class="rubric-aspect"> 
-                            The table width is set to 600px.
-                        </td>
+
                         <td class="align-center">
-                            <div style="height:3px"></div>
-                            <button type="button" class="btn btn-success add-button">+</button>
-                            <div style="height:3px"></div>
+                            <button type="button" class="btn btn-danger delete-button">x</button>
                         </td>
-                    </tr>
-                    <tr>
                         <td class="rubric-aspect rubric-aspect-backg">
-                            <div style="height:20px;"></div>
                             <b>Relación con requisitos funcionales</b>
-                            <div style="height:20px;"></div>
                         </td>
-                        <td class="rubric-aspect"> 
-                            The table does not exist or the assignment was never started.
-                        </td>                 
-                        <td class="rubric-aspect"> 
-                            The table exists but the headers were not specified in the first row.
-                        </td>  
-                        <td class="rubric-aspect"> 
-                            The first row of the table has the specified headers.
-                        </td>
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                        Solo describe las interfaces, sin mencionar requisito alguno
+                        </div></td>                 
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                        Solo para algunas de las interfaces explica cómo satisfacen los requisitos funcionales
+                        </div></td>  
+
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                        Para casi todas las interfaces, explica cómo satisfacen los requisitos funcionales
+                        </div></td>
+                        
                         <td class="align-center">
-                            <div style="height:3px"></div>
                             <button type="button" class="btn btn-success add-button">+</button>
-                            <div style="height:3px"></div>
                         </td>  
                     </tr>
+
                     <tr>
+
+                        <td class="align-center">
+                            <button type="button" class="btn btn-danger delete-button">x</button>
+                        </td>
                         <td class="rubric-aspect rubric-aspect-backg">
-                            <div style="height:20px;"></div>
                             <b>Organización de la información</b>
-                            <div style="height:20px;"></div>
                         </td>
-                        <td class="rubric-aspect"> 
-                            The table does not exist or the assignment was never started.
-                        </td>  
-                        <td class="rubric-aspect"> 
-                            The remaining rows only have some data filled in but not all 4 rows.
-                        </td>  
-                        <td class="rubric-aspect"> 	
-                            All 5 rows were filled in with the proper data.
-                        </td>
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            No se entiende la presentación porque no hay secuencia lógica de información
+                        </div></td>  
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            Es difícil seguir la presentación, porque el presentador “salta” entre diapositivas                        
+                        </div></td>  
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 	
+                            La información está presentada en una secuencia lógica
+                        </div></td>
+                        
                         <td class="align-center">
-                            <div style="height:3px"></div>
                             <button type="button" class="btn btn-success add-button">+</button>
-                            <div style="height:3px"></div>
                         </td>
                     </tr>
+
                     <tr>
+
+                        <td class="align-center">
+                            <button type="button" class="btn btn-danger delete-button">x</button>
+                        </td>
                         <td class="rubric-aspect rubric-aspect-backg">
-                            <div style="height:20px;"></div>
                             <b>Forma</b>
-                            <div style="height:20px;"></div>
                         </td>
-                        <td class="rubric-aspect"> 
-                            The table does not exist or the assignment was never started.
-                        </td>  
-                        <td class="rubric-aspect"> 
-                            The remaining rows only have some data filled in but not all 4 rows.
-                        </td>  
-                        <td class="rubric-aspect"> 	
-                            All 5 rows were filled in with the proper data.
-                        </td>
-                        <td class="rubric-aspect"> 	
-                                All 5 rows were filled in with the proper data.
-                        </td>
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            No se entiende lo que dice (en términos fonéticos y cinéticos) 
+                        </div></td>  
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            Se entiende lo que dice la de manera parcial (su cuerpo no acompaña sus palabras)
+                        </div></td>  
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 	
+                            Se da a entender, presentando de manera eficiente y adecuado lenguaje corporal                        
+                        </div></td>
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 	
+                            Se da a entender siempre, destacando en su forma (pausas, dicción, contacto visual, gesticulación, otros)
+                        </div></td>
+                        <!-- 
                         <td class="align-center">
-                            <div style="height:3px"></div>
                             <button type="button" class="btn btn-success add-button">+</button>
-                            <div style="height:3px"></div>
-                        </td>
+                        </td> -->
                     </tr>
+
                     <tr>
+
+                        <td class="align-center">
+                            <button type="button" class="btn btn-danger delete-button">x</button>
+                        </td>
                         <td class="rubric-aspect rubric-aspect-backg">
-                            <div style="height:20px;"></div>
                             <b>Entusiasmo</b>
-                            <div style="height:20px;"></div>
                         </td>
-                        <td class="rubric-aspect"> 
-                            The table does not exist or the assignment was never started.
-                        </td>  
-                        <td class="rubric-aspect"> 
-                            The remaining rows only have some data filled in but not all 4 rows.
-                        </td>  
-                        <td class="rubric-aspect"> 	
-                            All 5 rows were filled in with the proper data.
-                        </td>
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            No muestra interés en su Entrega                       
+                        </div></td>  
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 
+                            Se muestra algo negativo acerca de su entrega
+                        </div></td> 
+                        
+                        <td class="rubric-aspect"><div contenteditable class="editable"> 	
+                            Ocasionalmente habla en forma positiva                        
+                        </div></td>
+                        
                         <td class="align-center">
-                            <div style="height:3px"></div>
                             <button type="button" class="btn btn-success add-button">+</button>
-                            <div style="height:3px"></div>
                         </td>
                     </tr>
                     <tr>
+                        <td></td>
                         <td class="align-center">
-                            <div style="height:20px;"></div>
                             <button type="button" class="btn btn-success">Agregar Aspecto</button>
-                            <div style="height:20px;"></div>
                         </td>
                     </tr>
                 </tbody>
@@ -212,6 +251,11 @@
                 <input class="form-control" type="text" placeholder="Puntaje Total" readonly>
             </div>
             <div class="rubric-footer">
+                
+
+                <div class="row">
+                
+                    <div class="column">
                 <p><b>Usada en las evaluaciones:</b>
                     <div class="list-group">
                         <button type="button" class="list-group-item list-group-item-action">Presentación 1 - 2019/1</button>
@@ -220,6 +264,19 @@
                         <button type="button" class="list-group-item list-group-item-action">Presentación 6 - 2018/1</button>
                     </div>
                 </p>
+            </div>
+        <div class="column" style="margin-left: 200px">
+                <p><b>Últimas modificaciones:</b>
+                    <div class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action">2019/03/2 21:00:10</button>
+                        <button type="button" class="list-group-item list-group-item-action">2018/03/2 21:00:10</button>
+                        <button type="button" class="list-group-item list-group-item-action">2018/03/2 21:00:10</button>
+                        <button type="button" class="list-group-item list-group-item-action">2018/03/2 21:00:10</button>
+                    </div>
+                </p>
+            </div>
+
+                </div>
             </div>
         </div>
     </div>

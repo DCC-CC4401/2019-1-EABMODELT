@@ -17,35 +17,46 @@
 <body style="background-color: white">
     <div class="body-flex">
         <div class='body-row header'>
-            <div id="fakenavbar"> </div>
-            <div id="navbar" >
-                <ul>
-                    <li><a href="#home">Logo</a></li>
-                    <li style="flex-grow: 1; margin: auto"><a href="#home"> Sistema de Evaluación CC4401</a></li>
-                    <li> <a> Rúbrica Menu Evaluador </a></li>
-                    <li style="float:right"><a class="active" href="#about">Exit</a></li>
-                </ul>
+            <div class="custom-navbar" >
+                    <a href="landingAdmin.html">Logo</a>
+                    <a style="flex-grow: 1; margin: auto; margin-right: 0" href="landingAdmin.html"> Sistema de Evaluación CC4401</a>
+                    <div class="custom-dropmenu">
+                        
+                        <div class="custom-dropbtn">Evaluador: Pablo Miranda 
+                        </div><span style="margin-left: 5px; float:right;" class="fa fa-caret-down"></span>
+
+                        <div class="custom-dropmenu-content">
+                            <a href="#"> Perfil</a>
+                            <a href="#"> Configuración</a>
+                        </div>
+                    </div>  
             </div>
         </div>
 
         <div class="body-row content">
 
             <div>
-                <h2 style="margin-left:3%; margin-top: 30px">Lista de Rúbricas</h2>
+                <h2 style="margin: 30px auto 30px 3%">Lista de Rúbricas</h2>
             </div>
 
+            <nav class="navbar navbar-light bg-light rubric-list">
+                <!-- <button type="button" class="btn btn-success">Crear Nueva Rúbrica</button> -->
+                <input type="search" placeholder="Buscar Rúbrica" id="Buscador" />
+            </nav>
+
+            <br>
             <!--Como un link a la rúbrica-->
             <nav class="navbar navbar-light bg-light rubric-list">
-                <a class="navbar-brand" href="#">Rúbrica 1 - 2019/1</a>
-                <button type="button" class="btn btn-info">Detalles</button>
-            </nav>
-            <nav class="navbar navbar-light bg-light rubric-list">
-                <a class="navbar-brand" href="#">Rúbrica 2 - 2019/1</a>
-                <button type="button" class="btn btn-info">Detalles</button>
-            </nav>
-            <nav class="navbar navbar-light bg-light rubric-list">
                 <a class="navbar-brand" href="#">Rúbrica 3 - 2019/1</a>
-                <button type="button" class="btn btn-info">Detalles</button>
+                <button type="button" class="btn btn-info details-but">Detalles</button>
+            </nav>
+<!--             <nav class="navbar navbar-light bg-light rubric-list">
+                <a class="navbar-brand" href="#">Rúbrica 2 - 2019/1</a>
+                <button type="button" class="btn btn-info details-but">Detalles</button>
+            </nav>
+ -->            <nav class="navbar navbar-light bg-light rubric-list">
+                <a class="navbar-brand" href="#">Rúbrica 1 - 2019/1</a>
+                <button type="button" class="btn btn-info details-but">Detalles</button>
             </nav>
         </div>
     </div>

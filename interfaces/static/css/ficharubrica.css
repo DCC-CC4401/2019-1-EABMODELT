@@ -8,21 +8,32 @@
     text-align: center;
 }
 
-.rubric-table{
+table.rubric-table{
+    font-size: 11pt;
     box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
+    margin-left: 4%;
+    width: 90%;
+    max-width: 90%;
     border-collapse: collapse;
-    border: solid #e0e0dc;
-    border-width: 1px;
+    /*border: solid #e0e0dc;*/
+    /*border-width: 1px;*/
+    overflow: scroll;
+    border: 0;
+    border-spacing: 1;
+    border-padding: 0;
+    /*background-color: white;*/
 }
 
 .rubric-title{
+    text-align: left;
     font-weight: bold;
 }
 
 .rubric-aspect{
-    text-align: center;
+    text-align: left;
+    vertical-align: top ;
+    padding-top: 10px;
+    padding-left: 5px;
     border: solid #e0e0dc;
     border-width: 1px;
 }
@@ -57,6 +68,15 @@
 
 .rubric-list{
     margin: 0% 14% 0% 4%;
+    width: 80%;
+    display: inline-block !important;
+    border: 1px solid lightgray;
+
+}
+
+.details-but{
+    float: right;
+    margin-right: 3px;
 }
 
 .add-button{
@@ -64,8 +84,35 @@
     font-weight: bold;
     font-size: 20px;
     margin-right:40%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.delete-button{
+    font-size: 20px;
+    float: right;
+    margin-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .table-margin{
     margin: 5%;
+}
+
+
+#Buscador {
+  background-size: 24px;
+  width: 500px;
+  border: transparent;
+  border-bottom: solid 1px #ccc;
+  padding: 10px 10px 10px 30px;
+  outline: none;
+}
+/*<!-- By AngelKrak -->*/
+
+.editable{
+
+/*    background-color: white;
+*/    border: 1px dotted black;
 }
