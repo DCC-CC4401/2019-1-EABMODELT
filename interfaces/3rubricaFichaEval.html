@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!--Carga de ficheros CSS creados por el grupo-->
+        <link rel="stylesheet" type="text/css" href="static/css/main.css">
+        <link rel="stylesheet" type="text/css" href="static/css/ficharubrica.css">
+
+        <title>Administrador de Rúbricas</title>
+    </head>
+
+
+    <body>
+    <div class="body-flex">
+
+        <div class='body-row header'>
+            <div class="custom-navbar" >
+                    <a href="landingAdmin.html">Logo</a>
+                    <a style="flex-grow: 1; margin: auto; margin-right: 0" href="1landingAdmin.html"> Sistema de Evaluación CC4401</a>
+                    <div class="custom-dropmenu">
+                        
+                        <div class="custom-dropbtn">Evaluador: Pablo Miranda 
+                        </div><span style="margin-left: 5px; float:right;" class="fa fa-caret-down"></span>
+
+                        <div class="custom-dropmenu-content">
+                            <a href="#"> Perfil</a>
+                            <a href="#"> Configuración</a>
+                        </div>
+                    </div>  
+            </div>
+        </div>
+
+        <div class="body-row content">
+
+            <div>
+                <h3 style="text-align:center; margin-bottom:4%;  margin-top:30px;">Nombre Rúbrica</h3>
+            </div>
+
+
+            <div class="boxed" style="margin-bottom: 30px">
+                <b>Nombre: </b> Rúbrica 3<br>
+                <b>Descripción Rúbrica:</b> Esta rúbrica concentra la evaluación de la presentación en los puntos...<br>
+                <b> Tiempo:</b> 5:00
+            </div>
+                     <table class="rubric-table" style="margin-bottom: 50px">
+                <tbody>
+                    <tr>
+                        <!-- Aquí podría ir el nombre de la rúbrica si queremos mostrarlo -->
+                    </tr>
+                    <tr>
+                        <td width="20%"></td>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Incompleto</b><br>
+                            <b>0pts</b>
+                        </td>                       
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Deficiente</b><br>
+                            <b>0.3pts</b>
+                        </td>                       
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Regular</b><br>
+                            <b>0.7pts</b>
+                        </td>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Bueno</b><br>
+                            <b>1.0pts</b>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Contenido</b>
+                        </td>
+                        <td class="rubric-aspect">  
+                            No incluye las interfaces solicitadas
+                        </td>  
+                        
+                        <td class="rubric-aspect"> 
+                            Faltan la mayoria de las interfaces
+                        </td> 
+                        
+                        <td class="rubric-aspect"> 
+                            Solo faltan 1 o 2 interfaces
+                        </td>  
+                        
+                        <td class="rubric-aspect"> 
+                            Incluye todas las interfaces solicitadas
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Calidad del material</b>
+                        </td>
+                        <td class="rubric-aspect"> 
+                            Presentación con muchos errores ortográficos, todas las imágenes son de baja resolución 
+                        </td>  
+                        <td class="rubric-aspect"> 
+                            Algunos errores ortográficos, casi todas las imágenes son de baja resolución
+                        </td> 
+                        <td class="rubric-aspect"> 
+                            Pocos errores ortográficos, solo algunas imágenes son de baja resolución
+                        </td>
+                        <td>Pocos errores ortográficos, solo algunas imágenes son de baja resolución</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Relación con requisitos funcionales</b>
+                        </td>
+                        <td class="rubric-aspect"> 
+                        Solo describe las interfaces, sin mencionar requisito alguno
+                        </td>                 
+                        
+                        <td class="rubric-aspect"> 
+                        Solo para algunas de las interfaces explica cómo satisfacen los requisitos funcionales                        </td>  
+                        <td class="rubric-aspect"> 
+                        Para casi todas las interfaces, explica cómo satisfacen los requisitos funcionales
+                        </td>
+                        <td class="rubric-aspect"> Explica claramente como cada interfaz satisface los requisitos funcionales</td>
+                        
+                          
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Organización de la información</b>
+                        </td>
+                        <td class="rubric-aspect"> 
+                            No se entiende la presentación porque no hay secuencia lógica de información
+                        </td>  
+                        <td class="rubric-aspect"> 
+                            Es difícil seguir la presentación, porque el presentador “salta” entre diapositivas                        
+                        </td>  
+                        <td class="rubric-aspect">  
+                            La información está presentada en una secuencia lógica </td>
+                        <td class="rubric-aspect"> La información es presentada en una forma lógica e interesante</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Forma</b>
+                        </td>
+                        <td class="rubric-aspect"> 
+                            No se entiende lo que dice (en términos fonéticos y cinéticos) 
+                        </td>  
+                        <td class="rubric-aspect"> 
+                            Se entiende lo que dice la de manera parcial (su cuerpo no acompaña sus palabras)
+                        </td>  
+                        <td class="rubric-aspect">  
+                        Se da a entender, presentando de manera eficiente y adecuado lenguaje corporal                        
+                        </td>
+                        <td class="rubric-aspect">  
+                            Se da a entender siempre, destacando en su forma (pausas, dicción, contacto visual, gesticulación, otros)
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Entusiasmo</b>
+                        </td>
+                        <td class="rubric-aspect"> 
+                            No muestra interés en su Entrega                        </td>  
+                        <td class="rubric-aspect"> 
+                            Se muestra algo negativo acerca de su entrega                        </td> 
+                        <td class="rubric-aspect">  
+                            Ocasionalmente habla en forma positiva                        </td>
+                        <td class="rubric-aspect"> Habla en forma positiva durante casi toda la presentación</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+        </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!--Carga de ficheros CSS creados por el grupo-->
+        <link rel="stylesheet" type="text/css" href="static/css/ficharubrica.css">
+        <link rel="stylesheet" type="text/css" href="static/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+        <title>Administrador de Rúbricas</title>
+    </head>
+
+    <body>
+    <div class="body-flex">
+        <div class='body-row header'>
+            <div class="custom-navbar" >
+                    <a href="landingAdmin.html">Logo</a>
+                    <a style="flex-grow: 1; margin: auto; margin-right: 0" href="1landingAdmin.html"> Sistema de Evaluación CC4401</a>
+                    <span style="margin:0px; ">>></span>
+                    <a style="margin-right: :0px" href="">Menú de Rúbricas </a>
+                    <div class="custom-dropmenu">
+                        
+                        <div class="custom-dropbtn">Admin: Jocelyn Simmonds 
+                        <i style="margin-left: 5px; float:right;" class="fa fa-caret-down"></i></div>
+
+                        <div class="custom-dropmenu-content">
+                            <a href="#"> Perfil</a>
+                            <a href="#"> Configuración</a>
+                        </div>
+                    </div>  
+            </div>
+        </div>
+
+
+        <div class="body-row content">
+
+            <div>
+                <h2 style="margin-left:3%; margin-top: 30px">Lista de Rúbricas</h2>
+            </div>
+
+            <!--Como un link a la rúbrica-->
+            <!-- <ul>
+                <nav class="navbar navbar-light bg-light rubric-list">
+                    <a class="navbar-brand" href="#">Rúbrica 1 - 2019/1</a>
+                    <button style="float:right" type="button" class="btn btn-info">Detalles</button>
+                    <button style="float:right" type="button" class="btn btn-danger">Eliminar</button>
+                </nav>
+            </ul> -->
+
+            <nav class="navbar navbar-light bg-light rubric-list">
+                <button type="button" class="btn btn-success">Crear Nueva Rúbrica</button>
+                <input class="details-but" type="search" placeholder="Buscar Rúbrica" id="Buscador" />
+            </nav>
+            <br>
+            <nav class="navbar navbar-light bg-light rubric-list" style="display: inline-block !important;">
+                <a class="navbar-brand" href="#">Rúbrica 3 - 2019/1</a>
+                <button type="button" class="btn btn-danger details-but">Eliminar</button>
+                <button type="button" class="btn btn-success details-but" onclick="location.href='2rubricaFichaAdmin.html'">Editar</button>
+                <button type="button" class="btn btn-info details-but" onclick="location.href='3rubricaFichaEval.html'">Detalles</button>
+            </nav>
+            <nav class="navbar navbar-light bg-light rubric-list">
+                <a class="navbar-brand" href="#">Rúbrica 2 - 2019/1</a>
+                <button type="button" class="btn btn-danger details-but">Eliminar</button>
+                <button type="button" class="btn btn-success details-but" onclick="location.href='2rubricaFichaAdmin.html'">Editar</button>
+                <button type="button" class="btn btn-info details-but">Detalles</button>
+            </nav>
+            <nav class="navbar navbar-light bg-light rubric-list">
+                <a class="navbar-brand" href="#">Rúbrica 1 - 2019/1</a>
+                <button type="button" class="btn btn-danger details-but">Eliminar</button>
+                <button type="button" class="btn btn-success details-but" onclick="location.href='2rubricaFichaAdmin.html'">Editar</button>
+                <button type="button" class="btn btn-info details-but">Detalles</button>
+            </nav>
+        
+        </div>
+    </div>
+    </body>
+</html>

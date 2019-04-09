@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+<title> Landing Page </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="static/css/main.css">
+<link rel="stylesheet" type="text/css" href="static/css/eval.css"/>
+
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+
+<!-- awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="static/css/evaluacion.css"/>
+        <link rel="stylesheet" type="text/css" href="static/css/ficharubrica.css"/>
+
+<body>
+
+<div class="body-flex">
+        <div class='body-row header'>
+            <div class="custom-navbar" >
+                    <a href="1landingAdmin.html">Logo</a>
+                    <a style="flex-grow: 1; margin: auto" href="1landingAdmin.html"> Sistema de Evaluación CC4401</a>
+                    <div class="custom-dropmenu">
+                        <div class="custom-dropbtn">Admin: Jocelyn Simmonds<i style="margin-left: 5px;" class="fa fa-caret-down"></i></div>
+
+                        <div class="custom-dropmenu-content">
+                            <a href="#"> Perfil</a>
+                            <a href="#"> Configuración</a>
+                        </div>
+                    </div>  
+            </div>
+        </div>
+
+    <div class="table-flex-cont">
+        <div class="tablewrapper">
+        <table class="supertable">
+            <tr><th colspan="2">Información Evaluación</th> <th style="padding: 0px 10px"> <button type="button" class="btn btn-warning">Editar</button></th></tr>
+            <tr><td colspan="1">Estado                </td><td colspan="2" style="color: green">Activo</td></tr>
+            <tr><td colspan="1">Evaluación            </td><td colspan="2">Tarea 2</td></tr>
+            <tr><td colspan="1">Curso                 </td><td colspan="2">CC4401-01</td></tr>
+            <tr><td colspan="1">Fecha Inicio          </td><td colspan="2"> 09/04/2019 16:00</td></tr>
+            <tr><td colspan="1">Fecha Fin             </td><td colspan="2">09/04/2019 18:00</td></tr>
+            <tr><td colspan="1">Rúbrica               </td><td colspan="2">Tarea 2 ( <a href="rubricaFichaEval.html"> Ver </a> / <a href="rubricaFichaAdmin.html"> Editar</a> )</td></tr>
+            <tr><td colspan="1">Tiempo </td><td colspan="2">7:00</td></tr>
+        </table>
+        </div>
+
+
+        <div class="tablewrapper">
+        <table class="supertable">
+            <tr><th colspan="1">Evaluadores</th><th style="padding: 0px"> <button type="button" class="btn btn-success"> + Agregar Evaluador </button></th></tr>
+            <tr><td>Jocelyn Simmonds    </td><td><button disabled type="button" class="btn btn-danger">Quitar </button>  </td></tr>
+            <tr><td>Pablo Miranda       </td><td><button type="button" class="btn btn-danger">Quitar </button>  </td></tr>
+            <tr><td>María José Berger      </td><td><button disabled type="button" class="btn btn-danger">Quitar </button>  </td></tr>
+        </table>
+        </div>
+
+        <div class="tablewrapper">
+        <table class="supertable">
+            <!-- <table> -->
+            <tr><th colspan="2"><select> <option>Grupos Pendientes </option><option>Todos los grupos</option></select> </th></tr>
+            <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL </td><td> <button disabled type="button" class="btn btn-success">Evaluar</button></td></tr>
+            <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL </td><td> <button disabled type="button" class="btn btn-success">Evaluar</button></td> </td></tr>
+            <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL </td><td> <button disabled type="button" class="btn btn-success">Evaluar</button></td> </td></tr>
+            <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL</td><td> <button disabled type="button" class="btn btn-success">Evaluar</button></td> </td> </td></tr>
+            <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL</td><td> <button disabled type="button" class="btn btn-success">Evaluar</button></td> </td></tr>
+            <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL</td><td> <button disabled type="button" class="btn btn-success">Evaluar</button></td> </td></tr>
+        </table>
+        </div>
+    </div>
+
+    <div id="evalactual">
+
+        <h3 style="margin-left: 50px">Evaluación Actual</h3>
+
+
+
+
+            <div class="table-flex-cont" style="margin: 0px 0px 30px 50px; border: none">
+
+                <div class="tablewrapper" style="width: 100%">
+                    <table class="supertable" >
+                        <tr>
+                            <th>Grupo</th>
+                            <th>Presentadores</th>
+                            <th>Ya Han Presentado</th>
+                            <!-- <th>Ya presentaron</th> -->
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td> 12 EABTMODEL </td>
+                            <td>
+                             <form>
+                              <input type="checkbox" name="int1" value="JA"> José Astorga<br>
+                              <input type="checkbox" name="int2" value="JC"> José Cordero<br>
+                              <input type="checkbox" name="int3" value="TE"> Tomás Estevez<br>
+                              <input type="checkbox" name="int4" value="VP"> Valentina Pinto<br>
+                            </form> 
+                        </td>
+                            <td>
+                                <ul> 
+                                    <li> José Astorga (1) </li>
+                                    <li> José Cordero (3)</li>
+                                    
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+
+            <div class="table-flex-cont" style="margin: 0px 0px 30px 50px; border: none">
+
+                <div class="tablewrapper" style="width: 100%">
+                    <table class="supertable" >
+                        <tr>
+                            <th>Tiempo</th>
+                            <th colspan="2">Evaluadores Pendientes</th>
+                        </tr>
+                        
+                        <tr>
+                            <td> Indicar Tiempo: 
+                        <textarea style="resize: none; text-align: center; vertical-align: bottom;" rows="1" cols="1"></textarea> <b> : <b> 
+                        <textarea style="resize: none; text-align: center; vertical-align: bottom;" rows="1" cols="1"></textarea></td>
+                        <td>
+                            <ul> 
+                                <li> Pablo Miranda </li>
+                                <li> María José Berger</li>
+                            </ul>
+                            <button type="button" class="btn btn-warning">Solicitar Finalizar</button>
+
+                        </td>
+
+                        <td>
+                            <button type="button" class="btn btn-success">Finalizar</button>
+                            <button type="button" class="btn btn-danger">Cancelar</button>
+
+                        </td>
+
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <!-- 
+            <div class="boxed" style="width: 40%; left: 0">
+                <div style="text-align: center"> 
+                    <b>Detalles Evaluación</b><br>
+                </div>
+                <b>Grupo Evaluado: </b>Grupo 12 - EABMODELT<br>
+                <b>Tiempo:</b> 5:00 <br>
+                <b>Descripción de la evaluación:</b> Presentación de Prototipos de Interfases<br>
+            </div>
+ -->
+
+                <table class="rubric-table" style="margin-bottom: 50px">
+                <tbody>
+                    <tr>
+                        <!-- Aquí podría ir el nombre de la rúbrica si queremos mostrarlo -->
+                    </tr>
+                    <tr>
+                        <td width="20%"></td>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Incompleto</b><br>
+                            <b>0pts</b>
+                        </td>                       
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Deficiente</b><br>
+                            <b>0.3pts</b>
+                        </td>                       
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Regular</b><br>
+                            <b>0.7pts</b>
+                        </td>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Bueno</b><br>
+                            <b>1.0pts</b>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Contenido</b>
+                        </td>
+                        <td class="rubric-aspect">  
+                            No incluye las interfaces solicitadas
+                        </td>  
+                        
+                        <td class="rubric-aspect"> 
+                            Faltan la mayoria de las interfaces
+                        </td> 
+                        
+                        <td class="rubric-aspect rubric-selected-option"> 
+                            Solo faltan 1 o 2 interfaces
+                        </td>  
+                        
+                        <td class="rubric-aspect"> 
+                            Incluye todas las interfaces solicitadas
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Calidad del material</b>
+                        </td>
+                        <td class="rubric-aspect"> 
+                            Presentación con muchos errores ortográficos, todas las imágenes son de baja resolución 
+                        </td>  
+                        <td class="rubric-aspect"> 
+                            Algunos errores ortográficos, casi todas las imágenes son de baja resolución
+                        </td> 
+                        <td class="rubric-aspect rubric-selected-option"> 
+                            Pocos errores ortográficos, solo algunas imágenes son de baja resolución
+                        </td>
+                        <td>Pocos errores ortográficos, solo algunas imágenes son de baja resolución</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Relación con requisitos funcionales</b>
+                        </td>
+                        <td class="rubric-aspect"> 
+                        Solo describe las interfaces, sin mencionar requisito alguno
+                        </td>                 
+                        
+                        <td class="rubric-aspect rubric-selected-option"> 
+                        Solo para algunas de las interfaces explica cómo satisfacen los requisitos funcionales                        </td>  
+                        <td class="rubric-aspect"> 
+                        Para casi todas las interfaces, explica cómo satisfacen los requisitos funcionales
+                        </td>
+                        <td class="rubric-aspect"> Explica claramente como cada interfaz satisface los requisitos funcionales</td>
+                        
+                          
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Organización de la información</b>
+                        </td>
+                        <td class="rubric-aspect"> 
+                            No se entiende la presentación porque no hay secuencia lógica de información
+                        </td>  
+                        <td class="rubric-aspect"> 
+                            Es difícil seguir la presentación, porque el presentador “salta” entre diapositivas                        
+                        </td>  
+                        <td class="rubric-aspect">  
+                            La información está presentada en una secuencia lógica </td>
+                        <td class="rubric-aspect rubric-selected-option"> La información es presentada en una forma lógica e interesante</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Forma</b>
+                        </td>
+                        <td class="rubric-aspect"> 
+                            No se entiende lo que dice (en términos fonéticos y cinéticos) 
+                        </td>  
+                        <td class="rubric-aspect"> 
+                            Se entiende lo que dice la de manera parcial (su cuerpo no acompaña sus palabras)
+                        </td>  
+                        <td class="rubric-aspect">  
+                        Se da a entender, presentando de manera eficiente y adecuado lenguaje corporal                        
+                        </td>
+                        <td class="rubric-aspect rubric-selected-option">  
+                            Se da a entender siempre, destacando en su forma (pausas, dicción, contacto visual, gesticulación, otros)
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="rubric-aspect rubric-aspect-backg">
+                            <b>Entusiasmo</b>
+                        </td>
+                        <td class="rubric-aspect"> 
+                            No muestra interés en su Entrega                        </td>  
+                        <td class="rubric-aspect"> 
+                            Se muestra algo negativo acerca de su entrega                        </td> 
+                        <td class="rubric-aspect rubric-selected-option">  
+                            Ocasionalmente habla en forma positiva                        </td>
+                        <td class="rubric-aspect"> Habla en forma positiva durante casi toda la presentación</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <div style="float:right; margin-right:5%">
+                <b>Nota Final:</b>
+                <input class="form-control" type="text" placeholder="5,4" readonly>
+            </div>
+            <div style="float:right; margin-right:5%">
+                <b>Puntaje Total:</b>
+                <input class="form-control" type="text" placeholder="4,4" readonly>
+            </div>
+
+
+        <br>
+
+        <div class="rubric-footer">
+            <b>Comentarios Adicionales:</b>
+            <div contenteditable class="boxed editable" style="border: solid #428bca; width: 50%; margin-left:0%">  
+                    <i>Escriba sus comentarios aquí</i>
+            </div>
+            <button type="button" style="float:right; margin-right:5%; margin-bottom: 5%; background: #2C9B00" class="btn btn-success add-button">Enviar Evaluación</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<title> Landing Page </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="static/css/main.css">
+<link rel="stylesheet" type="text/css" href="static/css/landing.css"/>
+
+<!-- awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<div class="body-flex">
+        <div class='body-row header'>
+            <div class="custom-navbar" >
+                    <a href="#">Logo</a>
+                    <a style="flex-grow: 1; margin: auto" href="#"> Sistema de Evaluación CC4401</a>
+                    <div class="custom-dropmenu">
+                        <div class="custom-dropbtn">Admin: Jocelyn Simmonds<i style="margin-left: 5px;" class="fa fa-caret-down"></i></div>
+
+                        <div class="custom-dropmenu-content">
+                            <a href="#"> Perfil</a>
+                            <a href="#"> Configuración</a>
+                        </div>
+                    </div>  
+            </div>
+        </div>
+
+	<div class="body-row content">
+		<h2 style="margin-left:5%; margin-top: 50px">Bienvenida, Profesora Jocelyn.</h2>
+		<div class="menu-container">
+			
+			<div class="menu-box" id="evaluaciones">
+				<a href="evalMenuEval.html">
+				<img class="icon" src="static/icons/evaluation3.svg"></a>
+				<p class="menu-title">Evaluaciones</p>
+				<div class="menu-button-cont">
+					<div class="menu-button mustard"><a href="4fichaEvaluacionAdmin.html">Nueva Evaluación</a></div>
+					<div class="menu-button mustard"><a href="5fichaEvaluacionEval.html">Evaluación Activas</a></div>
+					<div class="menu-button mustard"><a>Todas las Evaluaciones</a></div>
+				</div>
+			</div>
+
+			<div class="menu-box" id="rubricas">
+				<a href="2rubricaMenuAdmin.html"> <img class="icon"  src="static/icons/rubrica2.svg"> </a>
+				<p class="menu-title">Rúbricas</p>
+				<div class="menu-button-cont">
+					<div class="menu-button yellow"><a href="2rubricaFichaAdmin.html">Crear Rúbrica</a></div>
+					<div class="menu-button yellow"><a href="2rubricaMenuAdmin.html">Ver Todas</a></div>
+				</div>
+			</div>
+
+
+			<div class="menu-box" id="notas">
+				<img class="icon" src="static/icons/multiple-11.svg">
+				<p class="menu-title">Notas</p>
+				<div class="menu-button-cont">
+					<div class="menu-button lightblue"><a>Exportar Notas (Excel)</a></div>
+					<div class="menu-button lightblue"><a href="6resumenEvaluacionAlumno.html">Generar Resumen</a></div>
+ 				</div>
+
+			</div>
+
+			<div class="menu-box" id="evaluadores">
+				<img class="icon" src="static/icons/evaluator3.svg">
+				<p class="menu-title">Evaluadores</p>
+				<div class="menu-button-cont">
+					<div class="menu-button blue"><a href="#">Crear Evaluador </a> </div>
+					<div class="menu-button blue"><a href="#">Administrar Evaluadores </a> </div>
+				</div>
+			</div>
+
+			<div class="menu-box" id="cursos">
+				<img class="icon" src="static/icons/group4.svg">
+				<p class="menu-title">Cursos</p>
+				<div class="menu-button-cont">
+					<div class="menu-button darkblue"><a>Añadir Curso</a></div>
+					<div class="menu-button darkblue"><a>Administrar Cursos</a></div>
+					<div class="menu-button darkblue"><a>Administrar Grupos</a></div>
+				</div>
+			</div>
+
+	 	</div>
+	</div>
+
+<!-- 	<div class="row footer">
+	</div>
+ -->
+</div>
+</body>
+</html>
