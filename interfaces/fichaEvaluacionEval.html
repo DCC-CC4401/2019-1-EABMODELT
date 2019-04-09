@@ -11,6 +11,7 @@
         <!--Carga de ficheros CSS creados por el grupo-->
         <link rel="stylesheet" type="text/css" href="static/css/main.css">
         <link rel="stylesheet" type="text/css" href="static/css/ficharubrica.css">
+        <link rel="stylesheet" type="text/css" href="static/css/eval.css">
 
         <title>Administrador de Rúbricas</title>
     </head>
@@ -43,6 +44,46 @@
             </div>
 
 
+
+        <div class="table-flex-cont">
+            <div class="tablewrapper" style="width: 43%">
+            <table class="supertable">
+                <tr><th colspan="3">Información Evaluación</th> </tr>
+                <tr><td colspan="1">Estado                </td><td colspan="2" style="color: green">Activo</td></tr>
+                <tr><td colspan="1">Evaluación            </td><td colspan="2">Tarea 2</td></tr>
+                <tr><td colspan="1">Curso                 </td><td colspan="2">CC4401-01</td></tr>
+                <tr><td colspan="1">Fecha Inicio          </td><td colspan="2"> 09/04/2019 16:00</td></tr>
+                <tr><td colspan="1">Fecha Fin             </td><td colspan="2">09/04/2019 18:00</td></tr>
+                <tr><td colspan="1">Rúbrica               </td><td colspan="2">Tarea 2 ( <a href="rubricaFichaEval.html"> Ver </a>  )</td></tr>
+                <tr><td colspan="1">Tiempo </td><td colspan="2">7:00</td></tr>
+            </table>
+            </div>
+
+
+<!--             <div class="tablewrapper">
+            <table class="supertable">
+                <tr><th colspan="1">Evaluadores</th><th style="padding: 0px"> <button type="button" class="btn btn-success"> + Agregar Evaluador </button></th></tr>
+                <tr><td>Jocelyn Simmonds    </td><td><button disabled type="button" class="btn btn-danger">Quitar </button>  </td></tr>
+                <tr><td>Pablo Miranda       </td><td><button type="button" class="btn btn-danger">Quitar </button>  </td></tr>
+                <tr><td>María José Berger      </td><td><button disabled type="button" class="btn btn-danger">Quitar </button>  </td></tr>
+            </table>
+            </div>
+ -->
+            <div class="tablewrapper"  style="width: 43%">
+            <table class="supertable">
+                <!-- <table> -->
+                <tr><th colspan="1"><select> <option>Grupos Pendientes </option><option>Todos los grupos</option></select> </th></tr>
+                <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL </td></tr>
+                <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL </td> </td></tr>
+                <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL </td> </td></tr>
+                <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL</td> </td> </td></tr>
+                <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL</td> </td></tr>
+                <tr><td> <span class="dot" style="background-color: yellow"></span></div>12 EABTMODEL</td> </td></tr>
+            </table>
+            </div>
+        </div>
+
+<!-- 
             <div class="boxed" style="margin-bottom: 30px">
                 <div style="text-align: center"> 
                     <b>Detalles Evaluación</b><br>
@@ -50,7 +91,54 @@
                 <b>Grupo Evaluado: </b>Grupo 12 - EABMODELT<br>
                 <b>Tiempo:</b> 5:00 <br>
                 <b>Descripción de la evaluación:</b> Presentación de Prototipos de Interfases<br>
+            </div> -->
+
+            <div id="evalactual">
+
+
+
+        <h3 style="margin-left: 50px">Evaluación Actual</h3>
+
+
+
+
+            <div class="table-flex-cont" style="margin: 0px 0px 30px 50px; border: none">
+
+                <div class="tablewrapper" style="width: 100%">
+                    <table class="supertable" >
+                        <tr>
+                            <th>Grupo</th>
+                            <th>Integrantes</th>
+                            <th>Ya Han Presentado</th>
+                            <!-- <th>Ya presentaron</th> -->
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td> 12 EABTMODEL </td>
+                            <td>
+                             <ul>
+                              <li> José Astorga</li>
+                              <li> José Cordero</li>
+                              <li> Tomás Estevez</li>
+                              <li> Valentina Pinto</li>
+                            </ul> 
+                        </td>
+                            <td>
+                                <ul> 
+                                    <li> José Astorga (1) </li>
+                                    <li> José Cordero (3)</li>
+                                    
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
             </div>
+
+
+
+
                 <table class="rubric-table" style="margin-bottom: 50px">
                 <tbody>
                     <tr>
@@ -185,14 +273,17 @@
                 <b>Puntaje Total:</b>
                 <input class="form-control" type="text" placeholder="4,4" readonly>
             </div>
-        </div>
+        <br>
+
         <div class="rubric-footer">
             <b>Comentarios Adicionales:</b>
-            <div contenteditable class="boxed editable" style="border: solid #428bca; width: 50%; margin-left:0%"> 	
+            <div contenteditable class="boxed editable" style="border: solid #428bca; width: 50%; margin-left:0%; height: 200px">  
                     <i>Escriba sus comentarios aquí</i>
             </div>
             <button type="button" style="float:right; margin-right:5%; margin-bottom: 5%; background: #2C9B00" class="btn btn-success add-button">Enviar Evaluación</button>
         </div>
+        </div>
+    </div>
     </div>
     </body>
 </html>
