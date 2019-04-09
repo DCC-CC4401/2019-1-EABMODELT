@@ -35,7 +35,11 @@
   display: flex;
   width: 30%;
   float: left;
-  
+}
+
+.movil{
+  max-height: 350px !important;
+
 }
 
 .supertable {
